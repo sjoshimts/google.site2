@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCR High-Growth Luxury Corridors</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#24344d;
+    padding:8px;
+}
+
+.table-wrap{
+    width:100%;
+    overflow-x:auto;
+    border:1px solid #eadfd5;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+table{
+    width:100%;
+    min-width:980px;
+    border-collapse:separate;
+    border-spacing:0;
+    table-layout:fixed;
+}
+
+thead{
+    background:#FFF0E3;
+}
+
+th{
+    padding:16px 14px;
+    text-align:left;
+    font-size:13px;
+    font-weight:700;
+    color:#8A471C;
+    border-right:1px solid #F2D5BE;
+    border-bottom:1px solid #EBC9AD;
+}
+
+th:last-child{
+    border-right:none;
+}
+
+tbody tr:nth-child(even){
+    background:#FCFAF8;
+}
+
+td{
+    padding:18px 14px;
+    font-size:13px;
+    line-height:1.6;
+    color:#475467;
+    border-right:1px solid #EEE8E2;
+    border-bottom:1px solid #EEE8E2;
+    vertical-align:top;
+}
+
+td:last-child{
+    border-right:none;
+}
+
+tbody tr:last-child td{
+    border-bottom:none;
+}
+
+tbody tr:hover{
+    background:#FFF7EF;
+}
+
+.corridor{
+    font-weight:700;
+    color:#183153;
+    font-size:14px;
+}
+
+.sector{
+    color:#334155;
+}
+
+.driver{
+    color:#475467;
+}
+
+.yield{
+    font-weight:700;
+    color:#B45309;
+    white-space:nowrap;
+}
+
+.asset{
+    font-weight:600;
+    color:#183153;
+}
+
+/* Column widths */
+th:nth-child(1),td:nth-child(1){width:18%;}
+th:nth-child(2),td:nth-child(2){width:20%;}
+th:nth-child(3),td:nth-child(3){width:30%;}
+th:nth-child(4),td:nth-child(4){width:14%;}
+th:nth-child(5),td:nth-child(5){width:18%;}
+
+/* Mobile */
+@media(max-width:768px){
+
+table,
+thead,
+tbody,
+tr,
+td{
+    display:block;
+    width:100%;
+}
+
+table{
+    min-width:100%;
+}
+
+thead{
+    display:none;
+}
+
+tbody tr{
+    margin-bottom:14px;
+    border:1px solid #EADFD5;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+td{
+    border:none;
+    border-bottom:1px solid #F3EEE8;
+    display:grid;
+    grid-template-columns:38% 62%;
+    padding:10px 12px;
+}
+
+td:last-child{
+    border-bottom:none;
+}
+
+td:before{
+    font-weight:700;
+    color:#8A471C;
+    padding-right:8px;
+}
+
+td:nth-child(1):before{content:"Micro-Market";}
+td:nth-child(2):before{content:"Prime Sectors";}
+td:nth-child(3):before{content:"Demand Drivers";}
+td:nth-child(4):before{content:"Rental Yield";}
+td:nth-child(5):before{content:"Representative Asset";}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+<tr>
+<th>Micro-Market</th>
+<th>Prime Sectors</th>
+<th>Primary Demand Drivers</th>
+<th>Gross Rental Yield</th>
+<th>Representative Max Estates Asset</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td><div class="corridor">Noida Expressway Corridor</div></td>
+<td><div class="sector">Sector 128, Sector 105, Sector 129</div></td>
+<td><div class="driver">Jewar Airport proximity, operational Magenta Line metro, and direct road connectivity to South Delhi.</div></td>
+<td><div class="yield">2.5%–3.5%</div></td>
+<td><div class="asset">Estate 128 / Estate 105</div></td>
+</tr>
+
+<tr>
+<td><div class="corridor">Dwarka Expressway Corridor</div></td>
+<td><div class="sector">Sector 36A, Sector 36, CPR Confluence</div></td>
+<td><div class="driver">16-lane expressway, signal-free access to IGI Airport, and seamless connectivity to Cyber Hub.</div></td>
+<td><div class="yield">2.5%–3.5%</div></td>
+<td><div class="asset">Estate 360 / Estate 361</div></td>
+</tr>
+
+<tr>
+<td><div class="corridor">South Delhi Commercial</div></td>
+<td><div class="sector">Okhla Phase III, Mathura Road</div></td>
+<td><div class="driver">Established corporate district, metro accessibility, and limited Grade A office supply.</div></td>
+<td><div class="yield">7.0%–8.5%</div></td>
+<td><div class="asset">Max House</div></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>
